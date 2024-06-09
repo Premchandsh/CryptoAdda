@@ -1,0 +1,34 @@
+.footer-div{
+    text-align: center;
+    margin: auto;
+    max-width: 80%;
+    border-top: 1px solid #eff2f564;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+
+.footer-div i{
+    color: rgb(255, 57, 57);
+}
+
+.footer-div .social-media{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+.footer-div .social-media i{
+    color: rgb(255, 255, 255);
+    transition: all ease-out 0.1s;
+}
+
+.footer-div .social-media i:hover{
+    scale: 1.5;
+}
+
+.footer-div .social-media i:active{
+    scale: 1;
+}

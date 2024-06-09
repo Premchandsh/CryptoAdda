@@ -1,0 +1,16 @@
+.BlogTab{
+    padding: 2rem 4rem;;
+}
+
+.BlogTab h1{
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+}
+
+.blog-tab-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}

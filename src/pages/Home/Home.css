@@ -1,0 +1,141 @@
+.home{
+    padding: 0 10px;
+    padding-bottom: 100px;
+}
+
+.home .hero{
+    max-width: 600px;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.home .hero h1{
+    font-size: max(4vw, 36px);
+}
+
+.home .hero p{
+    width: 75%;
+    font-size: 1.1rem;
+    color: #e3e3e3;
+    line-height: 1.5;
+}
+
+.home .hero form{
+    padding: 0.5rem;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.hero form input{
+    flex: 1;
+    font-size: 1rem;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+}
+
+.hero form button{
+    border: none;
+    color: #fff;
+    background-color: rgb(56, 97, 251);
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.6rem 1.4rem;
+}
+
+.crypto-table{
+    max-width: 800px;
+    margin: auto;
+    background: linear-gradient(to left, #263754, #263c5a);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.table-layout{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+    padding: 20px;
+    align-items: center;
+    border-bottom: 1px solid #eff2f520;
+    transition: all ease-in-out 0.1s;
+}
+
+.table-layout:hover{
+    background-color: #172948;
+}
+
+.table-layout .market-cap{
+    text-align: right;
+}
+
+.table-layout .oneday_change{
+    text-align: center;
+}
+
+.table-layout:last-child{
+    border: none;
+}
+
+.table-layout div{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.table-layout div img{
+    width: 35px;
+}
+
+.table-layout .green{
+    color: #00d515;
+    text-align: center;
+}
+
+.table-layout .red{
+    color: #ff4646;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .table-layout{
+        grid-template-columns: 0.5fr 3fr 1fr 1fr;
+    }
+
+    .table-layout .market-cap{
+        display: none;
+    }
+}
+
+@media (max-width: 500px){
+    .table-layout div img{
+        width: 25px;
+    }
+
+    .table-layout{
+        font-size: 13px;
+        grid-template-columns: 0.5fr 1.8fr 1fr 1fr;
+
+    }
+
+    .hero form input{
+        width: 100px;
+    }
+
+    .green i{
+        display: none;
+    }
+
+    .red i{
+        display: none;
+    }
+}

@@ -1,0 +1,130 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 10%;
+    color: #ddd;
+    border-bottom: 1px solid #eff2f564;
+}
+
+.navbar .logo{
+    width: max(15vw, 200px);
+}
+
+.navbar ul{
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+.navbar li{
+    cursor: pointer;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: max(1vw, 12px);
+}
+
+.nav-right select{
+    padding: 5px 8px;
+    border-radius: 6px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+}
+
+.nav-right option{
+    background-color: #09005c;
+    color: #fff;
+}
+
+.nav-right button{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffb620;
+    background-color: transparent;
+    border: 2px solid #ffb620;
+    position: relative;
+    cursor: pointer;
+    transition: all ease-out 0.1s;    
+    overflow: hidden;
+}
+
+.nav-right button::after{
+    content: "";
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    border-radius: 100%;
+    bottom: -100%;
+    background-color: #ffb620;
+    transition: all ease 0.4s;
+
+}
+
+.nav-right button:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+
+.nav-right button:hover span{
+    z-index: 20;
+    color: black;
+}
+
+.nav-right button:active{
+    scale: 0.95;
+}
+
+.nav-right button img{
+    width: 13px;
+}
+
+@media (max-width: 900px) {
+    .navbar{
+        padding: 1.1rem 6%;
+    }
+
+    .nav-right button{
+        gap: 0.5rem;
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        padding: 1.1rem 2%;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+
+    .nav-right button img{
+        width: 12px;
+    }
+}
+
+
+@media (max-width: 435px) {
+    .navbar .logo{
+        width: 160px;
+    }
+
+    .nav-right button img{
+        display: none;
+    }
+
+    .home .hero p {
+        font-size: 1rem;
+    }
+}
