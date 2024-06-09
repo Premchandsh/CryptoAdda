@@ -1,6 +1,6 @@
 # CryptoAdda - Crypto Marketplace
 
-![CryptoPlace Logo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9FUwFWr6i15W-xL_ZYnY_6fjm2lxAARTgtw&s)
+![CryptoAdda Logo](./src/assets/logo.svg)
 
 ## Description
 CryptoAdda is a dynamic web application built with React and Coingecko API that provides information about various cryptocurrencies.CryptoAdda offers data on cryptocurrency prices, market capitalization, price charts etc.
@@ -22,11 +22,13 @@ CryptoAdda is a dynamic web application built with React and Coingecko API that 
 * Bootstrap icons
 
 
-## Screenshots
+## Website Preview
 
+Preview - 1
 ![App Preview](./src/assets/cryptoadda-preview.png)
-![App Preview](./src/assets/cryptoadda-search-preview.png)
 
+Preview - 2
+![App Preview](./src/assets/cryptoadda-search-preview.png)
 
 
 ![Logo](./src/assets/logo.svg)
